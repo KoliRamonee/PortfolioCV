@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio EDV- Proyectos</title>
+        <link rel="stylesheet" href="./styles/proyectos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" href="./assets/telescopio.png" sizes="32x32" type="image/png">
+    </head>
+<body>
+    <!-- CONTENIDO GENERAL DEL HEADER INCLUYENDO AL MISMO NAVBAR DENTRO -->
+    <header class="header">
+    <div class="navbar">
+        <a href="index.html">Portfolio EDV</a>            
+        <ul class="lista1">
+        <li><a href="QuienSoy.html">Quien soy?</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        </ul>
+        <ul class="lista2">
+        <li><a href="https://koliramonee.github.io/AstroTurismo4.0//usuariosDB.html">Base de datos interactiva</a></li>
+        </ul>
+    </div>
+    </header>
+    <!-- CONTENIDO PRINCIPAL DE NUESTRO HOME-->
+    <main>
+    <div class="contenido">
+        <!--DENTRO DE ESTE DIV ↓, PUEDEN MOSTRARSE TRES TIPOS DE CONTENIDOS MEDIANTE JS-->
+        <div class="textoContenido">
+            <!--PRIMER CONTENIDO DEL DIV ↓-->
+            <div id="pagina1" class="pagina activa">
+                <div class="displayContenido">
+                <h1>Proyectos</h1>
+                <p class="textoPrincipal">Estos son algunos de los proyectos que fuí desarrollando a lo largo de mis estudios:</p>
+                <p class="textoContenido">Hacer click en la imagen lleva a la pagina.</p>
+                <button class="btn" onclick="mostrarPagina('pagina2')">→</button>
+                </div>
+            </div>
+            <!--SEGUNDO CONTENIDO DEL DIV ↓-->
+            <div id="pagina2" class="pagina">
+                <div class="displayContenido">
+                    <h1>AstroTurismo</h1>
+                    <div class="contenidoTarjeta">
+                        <div class="imagenContenido">
+                            <a href="https://koliramonee.github.io/AstroTurismo4.0/" target="_blank">
+                                <img src="./assets/stargazers.jpg" alt="imageOfGroup">
+                            </a>
+                        </div>
+                        <p class="textoTarjeta">StarGazers es un proyecto creado en el curso:<br> <br><br> - FullStack Python de codo a codo -<br> <br><br> Es una pagina creada en HTML con CSS y JS<br> Con una base de datos accesible <br>creada en Python y SQL.</p>
+                    </div>
+                    <div class="botones">
+                        <button class="btn" onclick="mostrarPagina('pagina1')">←</button>
+                        <button class="btn" onclick="mostrarPagina('pagina3')">→</button>
+                    </div>    
+                </div>
+            </div>
+            <!--TERCER CONTENIDO DEL DIV ↓-->
+            <div id="pagina3" class="pagina">
+                <div class="displayContenido">
+                    <h1>Encriptador</h1>
+                    <div class="contenidoTarjeta">
+                        <div class="imagenContenido">
+                            <a href="https://koliramonee.github.io/AluraChallenge/" target="_blank">
+                                <img src="./assets/encriptador.jpg" alt="imageOfGroup">
+                            </a>
+                        </div>
+                        <p class="textoTarjeta">El encriptador es un proyecto creado en el curso:<br><br><br>- Front End Java de Alura ONE -<br><br><br> Es un programa creado en JS con un front en HTML y CSS.<br> Encripta el texto, se puede copiar y desencriptar el mismo.</p>
+                    </div>
+                    <div class="botones">
+                        <button class="btn" onclick="mostrarPagina('pagina2')">←</button>
+                        <button class="btn" onclick="mostrarPagina('pagina4')">→</button>
+                    </div>    
+                </div>
+            </div>
+            <!--CUARTO CONTENIDO DEL DIV ↓-->
+            <div id="pagina4" class="pagina">
+                <div class="displayContenido">
+                    <h1>Barberia</h1>
+                    <div class="contenidoTarjeta">
+                        <div class="imagenContenido">
+                            <a href="https://koliramonee.github.io/Barberia-AluraONE/" target="_blank">
+                                <img src="./assets/barbe.jpg" alt="imageOfGroup">
+                            </a>
+                        </div>
+                        <p class="textoTarjeta">Barberia es una pagina creada en el curso:<br><br><br>- Programación primeros pasos Alura ONE -<br><br><br> Es una pagina creada en HTML con CSS <br> Tiene un market pero no conecta a nada.</p>
+                    </div>
+                    <div class="botones">
+                        <button class="btn" onclick="mostrarPagina('pagina3')">←</button>
+                        <button class="btn" onclick="mostrarPagina('pagina5')">→</button>
+                    </div>    
+                </div>
+            </div>
+            <!--QUINTO CONTENIDO DEL DIV ↓-->
+            <div id="pagina5" class="pagina">
+                <div class="displayContenido">
+                    <h1>Juego</h1>
+                    <div class="contenidoTarjeta">
+                        <div class="imagenContenido">
+                            <a href="https://koliramonee.github.io/Curso-AluraONE" target="_blank">
+                                <img src="./assets/numerosec.jpg" alt="imageOfGroup">
+                            </a>
+                        </div>
+                        <p class="textoTarjeta">El juego del numero secreto fue creado para:<br><br><br>- Inicio a JavaScript Alura ONE -<br><br><br>  Es un juego de adivinar un numero del 1 al 10, con ayuda<br> fue creado en JavaScript con un FrontEnd</p>
+                    </div>
+                    <div class="botones">
+                        <button class="btn" onclick="mostrarPagina('pagina4')">←</button>
+                    </div>   
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+    <span class="Contacto"> -Portfolio-<br> Personal </span>
+    <span class="copy2"> ©Ezequiel Daniel <br> Vermeulen.</span>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>

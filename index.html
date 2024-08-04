@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio EDV</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/telescopio.png" sizes="32x32" type="image/png">
+  </head>
+<body>
+    <!-- CONTENIDO GENERAL DEL HEADER INCLUYENDO AL MISMO NAVBAR DENTRO -->
+    <header class="header">
+      <div class="navbar">
+        <a href="index.html">Portfolio EDV</a>             
+        <ul class="lista1">
+          <li><a href="QuienSoy.html">Quien soy?</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+        </ul>
+        <ul class="lista2">
+          <li><a href="inicioSesion.html">Base de datos interactiva</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- CONTENIDO PRINCIPAL DE NUESTRO HOME-->
+    <main>
+      <div class="contenido">
+        <!--DENTRO DE ESTE DIV ↓, PUEDEN MOSTRARSE TRES TIPOS DE CONTENIDOS MEDIANTE JS-->
+        <div class="textoContenido"> 
+          <!--PRIMER CONTENIDO DEL DIV ↓-->
+          <div id="pagina1" class="pagina activa">
+            <div class="displayContenido">
+              <h1 class="tituloPrincipal">Bienvenido <br>a<br> Mi Portfolio</h1>
+              <p class="parrafoPrincipal">En esta pagina podrán ver algunos de mis proyectos creados en front y back end.  </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span class="Contacto"> -Portfolio-<br> Personal </span>
+      <span class="copy2"> ©Ezequiel Daniel <br> Vermeulen.</span>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
