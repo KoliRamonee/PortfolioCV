@@ -26,19 +26,20 @@ body {
   align-items: center;
 }
 .lista1 {
-  width: 25%;
-  font-weight: 450;
-  font-size: 1.5em;
-  text-shadow: 2px 2px 2px rgb(138, 26, 138);
-  display: flex;
-  justify-content: space-between;
+    width: 25%;
+    font-weight: 450;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 2px rgb(138, 26, 138);
+    display: flex;
+    justify-content: space-between;
 }
 .lista2 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-weight: 450;
-  font-size: 1em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 450;
+    font-size: 1em;
+    text-shadow: 2px 2px 2px rgb(138, 26, 138);
 }
 .lista1 li,
 .lista2 li {
