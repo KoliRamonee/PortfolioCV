@@ -302,13 +302,25 @@ footer {
   .lista2 {
     font-size: 0.5em;
   }
+  .displayContenido2 > h2,u{
+    font-size: 0.9em;
+  }
   .perfilP{
-    font-size: 1.3em;
+    font-size: 0.9em;
+  }
+  .hSkills1{
+    font-size: 0.9em;
+  }
+  .sSkills1{
+    font-size: 1em;
+  }
+  .integrante3{
+    font-size: 0.5em;
   }
 }
 
 /* Para pantallas con un máximo ancho de 850px */
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   .contenido {
     width: 90vw;
     border-radius: 10px;
@@ -345,13 +357,16 @@ footer {
     font-size: 1.1em;
   }
   .perfilP{
-    font-size: 1em;
+    font-size: 0.8em;
   }
   .laburo{
     font-size: 1em;
     text-align: center;
     text-shadow: 2px 2px 2px rgb(138, 26, 138);
     margin: 0;
+  }
+  .integrante > u{
+    font-size: 1em;
   }
   .integrante2{
     font-size: 0.8em;
@@ -387,7 +402,7 @@ footer {
 }
 
 /* Para pantallas con un máximo ancho de 390px */
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 580px) {
   .contenido {
     width: 90vw;
     border-radius: 10px;
@@ -450,7 +465,7 @@ footer {
     font-size: 1.1em;
   }
   .integrante3{
-    font-size: 0.5em;
+    font-size: 0.55em;
   }
   .final{
     font-size: 1.2em;
