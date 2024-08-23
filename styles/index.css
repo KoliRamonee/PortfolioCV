@@ -1,11 +1,12 @@
 /*BODY*/
-* {
+*{
   box-sizing: border-box;
   color: white;
   font-family: "Merriweather", serif;
 }
 body {
-  background-color: black;
+  background-color: rgb(184, 184, 184);
+  background-repeat: repeat-y;
   background-size: cover;
   background-position: center;
 }
@@ -30,8 +31,8 @@ body {
 .lista1 {
   width: 25%;
   font-weight: 450;
-  font-size: 1.4em;
-  text-shadow: 2px 2px 2px rgb(255, 175, 3);
+  font-size: 1.5em;
+  text-shadow: 2px 2px 2px rgb(138, 26, 138);
   display: flex;
   justify-content: space-between;
 }
@@ -41,7 +42,7 @@ body {
   align-items: center;
   font-weight: 450;
   font-size: 1em;
-  text-shadow:2px 2px 2px rgb(255,175,3);
+  text-shadow: 2px 2px 2px rgb(138, 26, 138);
 }
 .lista1 li,
 .lista2 li {
@@ -86,7 +87,7 @@ main {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #111111;
+  background-color: #666666;
   margin-top: 4vh;
   border-bottom-right-radius: 150px;
   border-top-right-radius: 10px;
@@ -165,114 +166,104 @@ footer {
   margin-right: 20px;
 }
 /* MEDIA PARA SCREEN 1465px */
-@media screen and (max-width: 1465px){
+@media only screen and (max-width: 1465px) {
+  .contenido {
+    width: 80vw;
+    height: auto;
+    border-radius: 20px;
+  }
+  .navbar {
+    height: 60px;
+  }
   .lista1 {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   .lista2 {
     font-size: 0.9em;
   }
-  .contenido {
-    width: 85vw;
-    height: 60vh;
+  .displayContenido > h1 {
+    font-size: 3em;
   }
-  .textoContenido {
-    width: 60%;
-    height: 100%;
+  .parrafoPrincipal {
+    font-size: 1.5rem;
   }
-  .displayContenido{
-    margin-top: 5px;
-    margin-left: 0;
-  }
-  .displayContenido > h1{
-    transition: 1.5s;
-    font-size: 2.5em;
-  }
-  .displayContenido > h2,h3{
-    transition: 1.5s;
-    font-size: 1.8em;
-  }
-  .parrafoPrincipal{
-    font-size: 1.5rem ;
-    line-height: 1.3;
+  .logo {
+    width: 3.8em;
   }
 }
-/* MEDIA PARA SCREEN 850px*/
-@media screen and (max-width: 850px) { 
+
+/* Para pantallas con un máximo ancho de 850px */
+@media only screen and (max-width: 850px) {
+  .contenido {
+    width: 90vw;
+    height: auto;
+    flex-direction: column;
+    border-radius: 15px;
+  }
+  .navbar {
+    height: 50px;
+  }
   .lista1 {
     font-size: 1em;
-  }
-  .lista2 {
-    font-size: 0.9em;
+    width: 50%;
     flex-direction: column;
   }
-  .contenido {
-    width: 85vw;
-    height: 60vh;
+  .lista2 {
+    font-size: 0.8em;
+    justify-content: center;
+    width: 50%;
   }
-  .textoContenido {
-    width: 60%;
-    height: 100%;
+  .displayContenido > h1 {
+    font-size: 2.5em;
   }
-  .displayContenido{
-    margin-top: 5px;
-    margin-left: 0;
-  }
-  .displayContenido > h1{
-    margin-top: 10px;
-    font-size: 2.3em;
-  }
-  .displayContenido > h2,h3{
-    transition: 1.5s;
-    font-size: 1.6em;
-  }
-  .imagenContenido{
-    display: none;
-  }
-  .parrafoPrincipal{
+  .parrafoPrincipal {
     font-size: 1.3rem;
-    line-height: 1;
-    width: 100%;
-    margin-top: 2vh;
+  }
+  .logo {
+    width: 3.5em;
   }
 }
-/* MEDIA PARA SCREEN 540px*/
-@media screen and (max-width: 430px){
+
+/* Para pantallas con un máximo ancho de 390px */
+@media only screen and (max-width: 390px) {
+  .contenido {
+    width: 95vw;
+    height: auto;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-top: 2vh;
+  }
+  .navbar {
+    height: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .lista1 {
-    font-size: 0.8rem;
-    padding: 3%;
+    font-size: 0.9em;
+    text-align: center;
+    width: 100%;
   }
   .lista2 {
-    flex-direction: column;
-    font-size: 0.75rem;
-    text-align: center;
-  }
-  .contenido{
-    width: 98%;
-  }
-  .textoContenido {
-    width: 95%;
-    height: 100%;
-  }
-  .displayContenido{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    font-size: 0.7em;
     justify-content: center;
     width: 100%;
   }
-  .displayContenido > h1{
-    font-size: 2.0em;
-    margin-top: 5vh;
+  .displayContenido {
+    height: auto;
+    justify-content: center;
   }
-  .displayContenido > h2,h3{
-    font-size: 1.2em;
+  .displayContenido > h1 {
+    font-size: 2em;
   }
-  .parrafoPrincipal{
-    font-size: 1.1rem;
-    line-height: 1;
-    width: 100%;
-    margin-top: 2vh;
+  .parrafoPrincipal {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 3em;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
