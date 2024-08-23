@@ -5,7 +5,7 @@
   font-family: "Merriweather", serif;
 }
 body {
-  background-color: black;
+  background-color: rgb(184, 184, 184);
   background-repeat: repeat-y;
   background-size: cover;
   background-position: center;
@@ -85,7 +85,7 @@ main {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #111111;
+  background-color: #666666;
   margin-top: 4vh;
   border-bottom-right-radius: 150px;
   border-top-right-radius: 10px;
@@ -111,13 +111,17 @@ main {
   justify-content: center;
 }
 .displayContenido2{
-  height: 60vh;
+  height: 68vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
   align-items: center;
-  text-align: left;
+  justify-content: center;
 }
 .displayContenido > h1,h2,h3{
   text-align: center;
-  font-size: 2em;
+  font-size: 1.6em;
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
   transition: 1.5s;
@@ -172,6 +176,15 @@ main {
   text-align: center;
   font-size: 2vh;
 }
+.perfilP{
+  font-size: 1.4em;
+  text-align: center;
+}
+.laburo{
+  font-size: 1.2em;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(138, 26, 138);
+}
 .integrante2{
   color:rgb(255, 255, 255);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -192,21 +205,25 @@ main {
 color: red;
 font-size: 2vh;
 font-weight: bolder;
+text-shadow: 2px 2px 2px rgb(138, 26, 138);
 }
 .sSkills{
   color:rgb(4, 145, 145);
   font-size: 2vh;
   font-weight: bolder;
+  text-shadow: 2px 2px 2px rgb(138, 26, 138);
 }
 .hSkills1{
   color: red;
   font-size: 1.7vh;
   font-weight: bold;
+  text-shadow: 2px 2px 2px rgb(138, 26, 138);
 }
 .sSkills1{
   color:rgb(4, 145, 145);
   font-size: 1.7vh;
   font-weight: bold;
+  text-shadow: 2px 2px 2px rgb(138, 26, 138);
 }
 .displayRedes{
   width: 100%;
@@ -270,138 +287,179 @@ footer {
 }
   
 /* MEDIA PARA SCREEN 1465px */
-@media screen and (max-width: 1465px){
+@media only screen and (max-width: 1465px) {
+  .contenido {
+    width: 80vw;
+    height: auto;
+    border-radius: 20px;
+  }
+  .navbar {
+    height: 60px;
+  }
+  .lista1 {
+    font-size: 1em;
+  }
+  .lista2 {
+    font-size: 0.5em;
+  }
+  .perfilP{
+    font-size: 1.3em;
+  }
+}
+
+/* Para pantallas con un máximo ancho de 850px */
+@media only screen and (max-width: 850px) {
+  .contenido {
+    width: 90vw;
+    border-radius: 10px;
+  }
+  .navbar {
+    height: 40px;
+    font-size: 0.7em;
+  }
   .lista1 {
     font-size: 1.4em;
+    text-align: center;
+    padding-left: 1vw;
   }
   .lista2 {
-    font-size: 0.9em;
-  }
-  .contenido {
-    width: 85vw;
-  }
-  .textoContenido{
-    width: 65%;
-    height: 100%;
-  }
-  .displayContenido > h2,h3{
-    font-size: 1.8em;
+    font-size: 1.5em;
+    justify-content: center;
   }
   .displayContenido > h1{
-    font-size: 2em;
+    font-size: 1.5em;
   }
-  .textoPrincipal{
-    font-size: 1.0em;
-    line-height: 1;
+  .displayContenido > h2,u{
+    font-size: 1.2em;
   }
-  .textoUnete{
-    font-size: 1.3em;
-  }
-  .displayContenido>ul{
-    font-size: 1.3em;
-  }
-  .displayContenido>h3{
-    margin-top: 5vh;
-  }
-  .redes{
-    margin-top: 2vh;
-  }
-  .redes>a>img{
-    width: 4.5vw;
-  }
-
-}
-/* MEDIA PARA SCREEN 850px*/
-@media screen and (max-width: 850px) { 
-  .lista1 {
-    font-size: 1em;
-  }
-  .lista2 {
-    font-size: 0.9em;
-    flex-direction: column;
-  }
-  .contenido {
-    height: 60vh;
-  }
-  .textoContenido{
-    width: 100%;
-
-  }
-  .displayContenido > h2,h3{
-    font-size: 1.8em;
-  }
-  .displayContenido > h1{
-    font-size: 2em;
-  }
-  .textoPrincipal{
-    font-size: 1em;
-    line-height: 1;
+  .displayContenido2 > h2,u{
+    font-size: 1.2em;
   }
   .textoUnete{
+    font-size: 1.2em;
+  }
+  .textoPrincipal {
+    font-size: 1.3em;
+  }
+  .integrante{
     font-size: 1.1em;
   }
-  .displayContenido>ul{
-    font-size: 1.3em;
-  }
-  .displayContenido>h3{
-    margin-top: 5.5vh;
-  }
-  .redes{
-    margin-top: 2vh;
-  }
-  .redes>a>img{
-    width: 5.5vh;
-  }
-  .imagenContenido{
-    display: none;
-  }
-}
-/* MEDIA PARA SCREEN 390px*/
-@media screen and (max-width: 390px){
-  .lista1 {
-    font-size: 0.8rem;
-    padding: 3%;
-  }
-  .lista2 {
-    flex-direction: column;
-    font-size: 0.75rem;
-    text-align: center;
-  }
-  .contenido {
-    height: 70vh;
-  }
-  .textoContenido{
-    width: 100%;
-  }
-  .displayContenido > h2,h3{
-    font-size: 1.8em;
-  }
-  .displayContenido > h1{
-    font-size: 1.7em;
-  }
-  .textoPrincipal{
-    font-size: 0.85em;
-  }
-  .textoUnete{
+  .perfilP{
     font-size: 1em;
   }
-  .displayContenido>ul{
-    font-size: 1.05em;
+  .laburo{
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(138, 26, 138);
+    margin: 0;
   }
-  .displayContenido>h3{
-    margin-top: 5.5vh;
+  .integrante2{
+    font-size: 0.8em;
   }
-  .redes{
-    margin-top: 2vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+  .hSkills{
+    font-size: 1.1em;
+  }
+  .redes2 > ul,p{
+    font-size: 0.8em;
+  }
+  .redes3 > ul,p{
+    font-size: 1em;
+  }
+  .hSkills1{
+    font-size: 1.9em;
+  }
+  .sSkills1{
+    font-size: 1.4em;
+  }
+  .integrante3{
+    font-size: 0.5em;
+  }
+  .final{
+    font-size: 1.2em;
+  }
+  .btn {
+    padding: 0.4vh;
+  }
+  footer {
     align-items: center;
+    text-align: center;
   }
-  .redes>a>img{
-    width: 6vh;
+}
+
+/* Para pantallas con un máximo ancho de 390px */
+@media only screen and (max-width: 390px) {
+  .contenido {
+    width: 90vw;
+    border-radius: 10px;
   }
-  .imagenContenido{
-    display: none;
+  .navbar {
+    height: 40px;
+    font-size: 0.7em;
+  }
+  .lista1 {
+    font-size: 1em;
+    text-align: center;
+  }
+  .lista2 {
+    font-size: 0.8em;
+    justify-content: center;
+  }
+  .displayContenido > h1{
+    font-size:1.5em;
+  }
+  .displayContenido > h2,u{
+    font-size: 1em;
+  }
+  .displayContenido2 > h2,u{
+    font-size: 1em;
+  }
+  .textoUnete{
+    font-size: 0.9em;
+  }
+  .textoPrincipal {
+    font-size: 0.8em;
+  }
+  .integrante{
+    font-size: 0.7em;
+  }
+  .perfilP{
+    font-size: 0.73em;
+  }
+  .laburo{
+    font-size: 0.6em;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(138, 26, 138);
+    margin: 0;
+  }
+  .integrante2{
+    font-size: 0.6em;
+  }
+  .hSkills{
+    font-size: 1em;
+  }
+  .redes2 > ul,p{
+    font-size: 0.7em;
+  }
+  .redes3 > ul,p{
+    font-size: 0.4em;
+  }
+  .hSkills1{
+    font-size: 1.1em;
+  }
+  .sSkills1{
+    font-size: 1.1em;
+  }
+  .integrante3{
+    font-size: 0.5em;
+  }
+  .final{
+    font-size: 1.2em;
+  }
+  .btn {
+    padding: 0.4vh;
+  }
+  footer {
+    align-items: center;
+    text-align: center;
   }
 }
