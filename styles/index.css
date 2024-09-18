@@ -1,12 +1,11 @@
 /*BODY*/
-*{
+* {
   box-sizing: border-box;
   color: white;
   font-family: "Merriweather", serif;
 }
 body {
   background-color: rgb(184, 184, 184);
-  background-repeat: repeat-y;
   background-size: cover;
   background-position: center;
 }
@@ -31,8 +30,8 @@ body {
 .lista1 {
   width: 25%;
   font-weight: 450;
-  font-size: 1.5em;
-  text-shadow: 2px 2px 2px rgb(138, 26, 138);
+  font-size: 1.4em;
+  text-shadow: 2px 2px 2px rgb(255, 175, 3);
   display: flex;
   justify-content: space-between;
 }
@@ -42,7 +41,7 @@ body {
   align-items: center;
   font-weight: 450;
   font-size: 1em;
-  text-shadow: 2px 2px 2px rgb(138, 26, 138);
+  text-shadow:2px 2px 2px rgb(255,175,3);
 }
 .lista1 li,
 .lista2 li {
